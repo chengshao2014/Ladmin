@@ -7,7 +7,7 @@
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8" />
-        <title>LAdmin</title>
+        <title>LnmpBlog管理后台</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -36,16 +36,16 @@
         <!-- END SIDEBAR TOGGLER BUTTON -->
         <!-- BEGIN LOGO -->
         <div class="logo">
-            <a href="/">
-                <img src="{{asset('backend/img/logo.png')}}" alt="" />
-            </a>
+            {{--<a href="/">--}}
+                {{--<img src="{{asset('backend/img/logo.png')}}" alt="" />--}}
+            {{--</a>--}}
         </div>
         <!-- END LOGO -->
         <!-- BEGIN LOGIN -->
         <div class="content">
             @yield('content')
         </div>
-        <div class="copyright"> 2016 © LAdmin Dashboard. </div>
+        <div class="copyright"> 2017 © LnmpBlog Dashboard. </div>
         <!--[if lt IE 9]>
             <script src="../assets/global/plugins/respond.min.js"></script>
             <script src="../assets/global/plugins/excanvas.min.js"></script> 
