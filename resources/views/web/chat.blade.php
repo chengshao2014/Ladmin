@@ -205,7 +205,7 @@
                     <div class="rcv_img" style="background-image: url(http://www.malu.me/im/img/f-30.png)">
                         <p class="nickname">ice世界</p>
                     </div>
-                    <div class="rcv_user">Ladmin:</div>你好呀
+                    <div class="rcv_user">LnmpBlog:</div>你好呀
                 </li>
                 
                 <li class="send">

@@ -20,9 +20,9 @@ class ArticleController extends Controller {
         $category_list = $categoryRepository->getAll();
 
         $seo = [
-            'title'    => 'Ladmin 文章列表',
-            'desc'     => 'Lmyadmin博客系统.',
-            'keywords' => 'Ladmin,Ladmin博客',
+            'title'    => 'LnmpBlog 文章列表',
+            'desc'     => 'LnmpBlog博客系统.',
+            'keywords' => 'LnmpBlog,LnmpBlog博客',
         ];
 
         return view("web.article.index",compact('article_list','category_list','seo'));
@@ -39,9 +39,9 @@ class ArticleController extends Controller {
         $articleRepository->updateViewCount($id);
 
         $seo = [
-            'title'    => $article['title']."_Ladmin",
+            'title'    => $article['title']."_LnmpBlog",
             'desc'     => $article['desc'],
-            'keywords' => 'Ladmin,'.$article['title'],
+            'keywords' => 'LnmpBlog,'.$article['title'],
         ];
 
         return view("web.article.show",compact("article","category_list","seo"));

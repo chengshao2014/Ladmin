@@ -11,11 +11,11 @@ use App\Http\Controllers\Controller;
  *     basePath="/",
  *     @SWG\Info(
  *         version="1.0.0",
- *         title="Ladmin API 管理中心",
- *         description="Ladmin API 接口管理中心",
+ *         title="LnmpBlog API 管理中心",
+ *         description="LnmpBlog API 接口管理中心",
  *         termsOfService="",
  *         @SWG\Contact(
- *             email="652008158@qq.com"
+ *             email="499837531@qq.com"
  *         ),
  *        
  *     ),
