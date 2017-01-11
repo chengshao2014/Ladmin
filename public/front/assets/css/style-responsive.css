@@ -36,9 +36,9 @@
 	/* End Shrink */
 
 	/*BEGIN NAVIGATION (WHILE RESIZING WINDOW)*/
-	.header a.logo-v1 img {
-		margin-top: 12px;
-	}
+	/*.header a.logo-v1 img {*/
+		/*margin-top: 12px;*/
+	/*}*/
 	.header.scrolling-fixed a.logo-v1 img {
 		margin-top: 17px;
 	}

@@ -247,7 +247,7 @@ Misc tools
 }
 
 .margin-bottom-40 {
-  margin-bottom: 40px !important;
+  /*margin-bottom: 40px !important;*/
 }
 
 .margin-top-20 {
@@ -318,10 +318,11 @@ hr {
 /*Global classes*/
 .container {
 	padding: 0 10px;
+	width:100%;
 }
 
 .min-hight {
-	min-height: 650px;
+	min-height: 750px;
 }
 
 /*.page-header-fixed .slider { 
@@ -2579,13 +2580,16 @@ li [class*=" fa-"].icon-large {
 }
 
 /** 自定义样式begin**/
-.warp{
-    width:80%;
-    margin:0 auto;
-}
+/*.warp{*/
+    /*width:80%;*/
+    /*margin:0 auto;*/
+/*}*/
 .h_menu{
     float:left;
     margin-bottom: 4px;
+	/*border:solid 1px blue;*/
+	height:100px;
+	width:50%;
 }
 
 .h_menu ul li .active a{
@@ -2614,6 +2618,8 @@ ol,ul{
 }
 .header_sub{
     padding:0 4%;
+	/*border:1px solid red;*/
+	height:100px;
 }
 .h_menu ul li a:hover{
     color:#00a8c6;
@@ -2621,5 +2627,42 @@ ol,ul{
     text-decoration: underline;
 
 }
-
+.navbar > .container .navbar-brand{
+	margin-left:10%;
+}
+.h_search{
+	float:left;
+	border:1px solid rgb(216, 216, 216);
+	margin:30px 0;
+	position: relative;
+	width:24.33333%;
+}
+.h_search input[type="text"]{
+	background:#ffffff none repeat scroll 0 0;
+	border:medium none;
+	color:#312c3c;
+	font-family: "Open Sans",sans-serif;
+	font-size:0.875em;
+	line-height:1.5em;
+	outline:medium none;
+	padding:10px 16px;
+	position:relative;
+	text-transform: capitalize;
+	width:78.333%;
+}
+.h_search input[type="submit"]{
+	background:rgba(0, 0, 0, 0) url("../img/bg/search_h.png") no-repeat scroll 10px 10px;
+	border:medium none;
+	cursor:pointer;
+	line-height:1.1em;
+	outline:medium none;
+	padding:10px 0;
+	position:absolute;
+	right:0;
+	width:14.33%;
+}
+/*.container .navbar-header .navbar-brand{*/
+	/*margin-left:155px;*/
+	/*position:absolute*/
+/*}*/
 /** 自定义样式end**/
