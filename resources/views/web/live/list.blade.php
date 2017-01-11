@@ -14,7 +14,7 @@
 	        <div class="mix-inner">
 	          <img class="img-responsive" src="/front/assets/img/apple.jpg" alt="" >
 	          <div class="mix-details">
-	             <h4>Ladmin直播</h4>
+	             <h4>LnmpBlog直播</h4>
 	           
 	            <a href="{{url('live/info/1')}}"><i class="fa fa-search"></i></a>
 	          </div> 

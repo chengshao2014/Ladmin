@@ -7,7 +7,7 @@
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8" />
-        <title>Ladmin</title>
+        <title>LnmpBlog管理后台</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -103,7 +103,7 @@
         <!-- END CONTAINER -->
         <div class="page-footer">
             <div class="page-footer-inner"> 
-                2016 © Iadmin.
+                2017 © LnmpBlog.
                 <span id="online"></span>
             </div>
             <div class="scroll-to-top">

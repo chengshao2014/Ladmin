@@ -17,9 +17,9 @@ class LiveController extends Controller
 	 */
     public function liveList() {
 		$seo = [
-            'title'    => 'Ladmin 直播列表',
-            'desc'     => 'Ladmin 直播列表页面',
-            'keywords' => 'Ladmin,Ladmin博客，直播',
+            'title'    => 'LnmpBlog 直播列表',
+            'desc'     => 'LnmpBlog 直播列表页面',
+            'keywords' => 'LnmpBlog,LnmpBlog博客，直播',
         ];
 
     	return view('web.live.list', compact('seo'));
@@ -36,9 +36,9 @@ class LiveController extends Controller
     public function liveInfo($roomId)
     {
     	$seo = [
-            'title'    => 'Ladmin 直播房间',
-            'desc'     => 'Ladmin 直播房间页面',
-            'keywords' => 'Ladmin,Ladmin博客，直播',
+            'title'    => 'LnmpBlog 直播房间',
+            'desc'     => 'LnmpBlog 直播房间页面',
+            'keywords' => 'LnmpBlog,LnmpBlog博客，直播',
         ];
 
         if(isMobile()) {

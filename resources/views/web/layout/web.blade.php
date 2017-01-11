@@ -128,9 +128,9 @@
 
             <div class="col-md-8 col-sm-8">
                 <p>
-                    <span class="margin-right-10">2016 © iyoulnag. 版权所有. </span>
+                    <span class="margin-right-10">2016 © LnmpBlog </span>
                     <span>
-                        Power by <a target="_blank" href="https://github.com/luoyangpeng/Ladmin">Ladmin</a>
+                        Power by <a target="_blank" href="https://github.com/chengshao2014/Ladmin">Ladmin</a>
                     </span>
 
                 </p>
