@@ -1,6 +1,5 @@
 /* load open sans font from local */
 @import url(../fonts/font.css);
-
 /* General body settings */
 body { 
   color: #000;
@@ -248,7 +247,7 @@ Misc tools
 }
 
 .margin-bottom-40 {
-  margin-bottom: 40px !important;
+  /*margin-bottom: 40px !important;*/
 }
 
 .margin-top-20 {
@@ -319,10 +318,11 @@ hr {
 /*Global classes*/
 .container {
 	padding: 0 10px;
+	width:100%;
 }
 
 .min-hight {
-	min-height: 500px;
+	min-height: 750px;
 }
 
 /*.page-header-fixed .slider { 
@@ -444,13 +444,13 @@ Header and header elements.
 .header {
 	z-index: 999;
 	position: relative;
-	box-shadow: 0 1px 3px #ddd;	
-	background: #fff;
+	box-shadow: 0 1px 3px #ddd;
 	filter:none;
 	border: none; 
 	padding-left: 0;
 	padding-right: 0;
 	border-radius: 0;
+	background:rgba(0, 0, 0, 0) url("../img/bg/footer_bg.png") repeat scroll 0 0;
 }
 .ie8 .header {
 	border-bottom: 1px solid #eee;
@@ -479,7 +479,7 @@ Header and header elements.
 
 .header  a.brand {
 	font-size: 23px;
-	font-weight: 400; 
+	font-weight: 400;
 }
 
 .header a.brand b {
@@ -1266,14 +1266,17 @@ Copyright
 	color: #dee4eb;
 	font-size: 12px;
 	padding: 10px 0;
-	background: #1f2021;
 	border-top: 1px solid #333;
+	background:rgba(0, 0, 0, 0) url("../img/bg/footer_bg.png") repeat scroll 0 0;
 }
 
 .copyright p {
 	color: #bbb;
-	margin-top: 7px;
-	margin-bottom: 0;
+	/*margin-top: 7px;*/
+	/*margin-bottom: 0;*/
+	text-align: center;
+	font-size:14px;
+	margin:0 auto;
 }
 
 .copyright p a {
@@ -1316,8 +1319,10 @@ Copyright
 	border-top: solid 1px #f5f5f5;
 	border-bottom: solid 1px #f5f5f5;
 }
+/** mod by AChan **/
 .breadcrumbs .container{
 	padding:0;
+    height:100px;
 }
 
 .breadcrumbs h1 {
@@ -2574,4 +2579,90 @@ li [class*=" fa-"].icon-large {
     padding: 15px;
 }
 
+/** 自定义样式begin**/
+/*.warp{*/
+    /*width:80%;*/
+    /*margin:0 auto;*/
+/*}*/
+.h_menu{
+    float:left;
+    margin-bottom: 4px;
+	/*border:solid 1px blue;*/
+	height:100px;
+	width:50%;
+}
 
+.h_menu ul li .active a{
+    border-bottom:2px solid #00bac6;
+    color:#00bac6;
+}
+.h_menu ul li a{
+    color:#555555;
+    display:block;
+    font-size:14px;
+    font-weight:600;
+    padding:30px 25px;
+    text-transform: uppercase;
+    transition:all 0.3s ease-in-out 0s;
+    text-decoration: none;
+}
+
+.h_menu ul li{
+    float:left;
+    margin-right: 20px;
+}
+ol,ul{
+    list-style:outside none none;
+    margin:0px;
+    padding:0px;
+}
+.header_sub{
+    padding:0 4%;
+	/*border:1px solid red;*/
+	height:100px;
+}
+.h_menu ul li a:hover{
+    color:#00a8c6;
+    font-size:16px;
+    text-decoration: underline;
+
+}
+.navbar > .container .navbar-brand{
+	margin-left:10%;
+}
+.h_search{
+	float:left;
+	border:1px solid rgb(216, 216, 216);
+	margin:30px 0;
+	position: relative;
+	width:24.33333%;
+}
+.h_search input[type="text"]{
+	background:#ffffff none repeat scroll 0 0;
+	border:medium none;
+	color:#312c3c;
+	font-family: "Open Sans",sans-serif;
+	font-size:0.875em;
+	line-height:1.5em;
+	outline:medium none;
+	padding:10px 16px;
+	position:relative;
+	text-transform: capitalize;
+	width:78.333%;
+}
+.h_search input[type="submit"]{
+	background:rgba(0, 0, 0, 0) url("../img/bg/search_h.png") no-repeat scroll 10px 10px;
+	border:medium none;
+	cursor:pointer;
+	line-height:1.1em;
+	outline:medium none;
+	padding:10px 0;
+	position:absolute;
+	right:0;
+	width:14.33%;
+}
+/*.container .navbar-header .navbar-brand{*/
+	/*margin-left:155px;*/
+	/*position:absolute*/
+/*}*/
+/** 自定义样式end**/
