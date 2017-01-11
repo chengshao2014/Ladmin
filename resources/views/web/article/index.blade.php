@@ -2,19 +2,40 @@
 
 @section('content')
 <!-- BEGIN PAGE CONTAINER -->
-<div class="page-container page-body-background">
+<div class="page-container page-body-background warp">
 
     <!-- BEGIN BREADCRUMBS -->
     <div class=" breadcrumbs margin-bottom-40">
         <div class="container">
-            <div class="col-md-4 col-sm-4">
-                <h1>博客</h1>
-            </div>
-            <div class="col-md-8 col-sm-8">
-                <ul class="pull-right breadcrumb">
-                    <li><a href="/">首页</a></li>
-                    <li><a href="JavaScript:void(0)">博客列表</a></li>
-                </ul>
+            {{--<div class="col-md-4 col-sm-4">--}}
+                {{--<h1>博客</h1>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-8 col-sm-8">--}}
+                {{--<ul class="pull-right breadcrumb">--}}
+                    {{--<li><a href="/">首页</a></li>--}}
+                    {{--<li><a href="JavaScript:void(0)">博客列表</a></li>--}}
+                {{--</ul>--}}
+            {{--</div>--}}
+            <div class="header_sub">
+                <div class="h_menu">
+                    <ul>
+                        <li class="active">
+                            <a href="/blog">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="/blog">ABOUT  US</a>
+                        </li>
+                        <li class="active">
+                            <a href="/blog">BLOG</a>
+                        </li>
+                        <li class="active">
+                            <a href="/blog">PAGES</a>
+                        </li>
+                        <li class="active">
+                            <a href="/blog">CONTACT  US</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -59,7 +80,7 @@
                 <!-- BEGIN BLOG TAGS -->
                 <div class="blog-tags margin-bottom-20 blog-sidebar white_bg panel panel-body">
                     <div class="text-center">
-                        <h2>文章分类</h2>
+                        <h2>关注我</h2>
                         <hr>
                     </div>
 

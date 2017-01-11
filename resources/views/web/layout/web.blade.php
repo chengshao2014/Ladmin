@@ -52,24 +52,17 @@
         </div>
 
         <!-- BEGIN TOP NAVIGATION MENU -->
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="dropdown @if($url == '/')active @endif">
-                    <a class="dropdown-toggle" href="/">首页 </a>
+        {{--<div class="navbar-collapse collapse">--}}
+            {{--<ul class="nav navbar-nav">--}}
+                {{--<li class="dropdown @if($url == '/')active @endif">--}}
+                    {{--<a class="dropdown-toggle" href="/">首页 </a>--}}
 
-                </li>
-                <li class="dropdown @if($url == '/blog')active @endif">
-                    <a class="dropdown-toggle" href="{{url('blog/')}}">博客  </a>
-
-                </li>
-                <li class="dropdown @if($url == '/live')active @endif">
-                    <a class="dropdown-toggle" href="{{url('live/')}}">直播 </a>
-
-                </li>
-
-                
-            </ul>
-        </div>
+                {{--</li>--}}
+                {{--<li class="dropdown @if($url == '/blog')active @endif">--}}
+                    {{--<a class="dropdown-toggle" href="{{url('blog/')}}">博客  </a>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
+        {{--</div>--}}
         <!-- BEGIN TOP NAVIGATION MENU -->
     </div>
 </div>
@@ -77,67 +70,11 @@
 
 @yield('content')
 
-<!-- BEGIN FOOTER -->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 ">
-                <!-- BEGIN ABOUT -->
-                <h2>关于</h2>
-                <p class="margin-bottom-30">Ladmin是一个免费开源的后台管理系统，使用html5响应式设计，兼容多客户端友好使用.</p>
-                <div class="clearfix"></div>
-                <!-- END ABOUT -->
-
-
-            </div>
-            <div class="col-md-4 col-sm-4 ">
-                <!-- BEGIN CONTACTS -->
-                <h2>联系我们</h2>
-                <address class="margin-bottom-40">
-                    QQ群:517471676<br>
-                </address>
-                <!-- END CONTACTS -->
-
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <!-- BEGIN TWITTER BLOCK -->
-                <h2>关注我们</h2>
-                <dl class="dl-horizontal f-twitter">
-                    <dt><i class="fa fa-twitter"></i></dt>
-                    <dd>
-                        <a href="http://weibo.com/hnlhlyp1122" target="_blank">新浪微博</a>
-
-                    </dd>
-                </dl>
-
-
-                <!-- END TWITTER BLOCK -->
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- END FOOTER -->
-
 <!-- BEGIN COPYRIGHT -->
 <div class="copyright">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-8 col-sm-8">
-                <p>
-                    <span class="margin-right-10">2016 © LnmpBlog </span>
-                    <span>
-                        Power by <a target="_blank" href="https://github.com/chengshao2014/Ladmin">Ladmin</a>
-                    </span>
-
-                </p>
-            </div>
-
-        </div>
-    </div>
+    <p>
+        Copyright © 2016 lnmp68博客 Design by AChan 京ICP备14049449号-1
+    </p>
 </div>
 <!-- END COPYRIGHT -->
 
