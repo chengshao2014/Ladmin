@@ -1,11 +1,11 @@
 {
     "swagger": "2.0",
     "info": {
-        "title": "Ladmin API \u7ba1\u7406\u4e2d\u5fc3",
-        "description": "Ladmin API \u63a5\u53e3\u7ba1\u7406\u4e2d\u5fc3",
+        "title": "LnmpBlog API \u7ba1\u7406\u4e2d\u5fc3",
+        "description": "LnmpBlog API \u63a5\u53e3\u7ba1\u7406\u4e2d\u5fc3",
         "termsOfService": "",
         "contact": {
-            "email": "652008158@qq.com"
+            "email": "499837531@qq.com"
         },
         "version": "1.0.0"
     },
