@@ -36,7 +36,8 @@
 <div class="header navbar navbar-default navbar-static-top">
 
     <div class="container">
-        <div class="navbar-header">
+        {{--<div class="navbar-header">--}}
+        <div>
             <!-- BEGIN RESPONSIVE MENU TOGGLER -->
             <button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>

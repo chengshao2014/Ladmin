@@ -2589,7 +2589,6 @@ li [class*=" fa-"].icon-large {
     margin-bottom: 4px;
 	/*border:solid 1px blue;*/
 	height:100px;
-	width:50%;
 }
 
 .h_menu ul li .active a{
@@ -2616,8 +2615,9 @@ ol,ul{
     margin:0px;
     padding:0px;
 }
+/** mod by AChan **/
 .header_sub{
-    padding:0 4%;
+    padding:0 10%;
 	/*border:1px solid red;*/
 	height:100px;
 }
@@ -2631,7 +2631,7 @@ ol,ul{
 	margin-left:10%;
 }
 .h_search{
-	float:left;
+	float:right;
 	border:1px solid rgb(216, 216, 216);
 	margin:30px 0;
 	position: relative;
@@ -2661,6 +2661,15 @@ ol,ul{
 	right:0;
 	width:14.33%;
 }
+
+/*.h_find{*/
+	/*width:auto;*/
+	/*height:100%;*/
+	/*margin:0 auto;*/
+	/*!*border:1px solid red;*!*/
+	/*float:right;*/
+	/*position:relative;*/
+/*}*/
 /*.container .navbar-header .navbar-brand{*/
 	/*margin-left:155px;*/
 	/*position:absolute*/
