@@ -506,6 +506,8 @@ Header and header elements.
     transition:padding 0.3s ease-in-out;
     position: relative;
     z-index: 2;
+	height:auto;
+	padding:0px;
 }
 .scrolling-fixed .navbar-brand{
 	padding:0 15px;
@@ -526,6 +528,7 @@ Header and header elements.
     -webkit-transition:margin 0.2s ease-in-out;
     -o-transition:margin 0.2s ease-in-out;
     transition:margin 0.2s ease-in-out;
+	margin:20px;
 }
 
 .header .navbar-nav li a {
@@ -2590,19 +2593,23 @@ li [class*=" fa-"].icon-large {
     float:left;
     margin-bottom: 4px;
 	/*border:solid 1px blue;*/
-	height:100px;
+	/*height:100px;*/
+	color:white;
 }
 
 
 .h_menu ul li a{
-    color:#555555;
+    /*color:#555555;*/
+	color:#ccc;
+	line-height:30px;
     display:block;
     font-size:14px;
     font-weight:600;
-    padding:30px 25px;
+    padding:20px 15px;
     text-transform: uppercase;
     transition:all 0.3s ease-in-out 0s;
     text-decoration: none;
+	/*height:100px;*/
 }
 
 .h_menu ul li{
@@ -2629,18 +2636,21 @@ ol,ul{
 
 }
 
+.h_menu ul li .active{
 
+}
 .h_menu ul li a:active{
 	border-bottom:2px solid #00bac6;
 	color:#00bac6;
 }
 .navbar > .container .navbar-brand{
-	margin-left:150px;
+	margin:5px 50px;
+	/*height:100px;*/
 }
 .h_search{
-	float:right;
+	float:left;
 	border:1px solid rgb(216, 216, 216);
-	margin:30px 60px;
+	margin:20px 0px;
 	position: relative;
 	width:26.33333%;
 }
@@ -2762,5 +2772,81 @@ ol,ul{
 }
 .blog-timeline-box .blog-author a {
 	color: #6e7c86;
+}
+
+/**新搜索样式**/
+.navbar-form {
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+	margin: 8px -15px;
+	padding: 10px 15px;
+}
+@media (min-width: 768px) {
+	.navbar-form .form-group {
+		display: inline-block;
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+	.navbar-form .form-control {
+		display: inline-block;
+		vertical-align: middle;
+		width: auto;
+		margin:10px;
+	}
+	.navbar-form .form-control-static {
+		display: inline-block;
+	}
+	.navbar-form .input-group {
+		display: inline-table;
+		vertical-align: middle;
+		float:right;
+		margin-right:150px;
+	}
+	.navbar-form .input-group .input-group-addon, .navbar-form .input-group .input-group-btn, .navbar-form .input-group .form-control {
+		width: auto;
+	}
+	.navbar-form .input-group > .form-control {
+		width: 100%;
+	}
+	.navbar-form .control-label {
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+	.navbar-form .radio, .navbar-form .checkbox {
+		display: inline-block;
+		margin-bottom: 0;
+		margin-top: 0;
+		vertical-align: middle;
+	}
+	.navbar-form .radio label, .navbar-form .checkbox label {
+		padding-left: 0;
+	}
+	.navbar-form .radio input[type="radio"], .navbar-form .checkbox input[type="checkbox"] {
+		margin-left: 0;
+		position: relative;
+	}
+	.navbar-form .has-feedback .form-control-feedback {
+		top: 0;
+	}
+}
+@media (max-width: 767px) {
+	.navbar-form .form-group {
+		margin-bottom: 5px;
+	}
+	.navbar-form .form-group:last-child {
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 768px) {
+	.navbar-form {
+		border: 0 none;
+		box-shadow: none;
+		margin-left: 0;
+		margin-right: 0;
+		padding-bottom: 0;
+		padding-top: 0;
+		width: auto;
+	}
 }
 /** 自定义样式end**/
