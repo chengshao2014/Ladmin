@@ -21,6 +21,7 @@
     <!-- BEGIN THEME STYLES -->
 
     <link href="/front/assets/css/style.css" rel="stylesheet" type="text/css"/>
+    {{--<link href="/front/assets/css/blog.style.css" rel="stylesheet" type="text/css"/>--}}
     <link href="/front/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
     <link href="/front/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
     <link href="/front/assets/css/custom.css" rel="stylesheet" type="text/css"/>
@@ -51,20 +52,6 @@
             </a>
             <!-- END LOGO -->
         </div>
-
-        <!-- BEGIN TOP NAVIGATION MENU -->
-        {{--<div class="navbar-collapse collapse">--}}
-            {{--<ul class="nav navbar-nav">--}}
-                {{--<li class="dropdown @if($url == '/')active @endif">--}}
-                    {{--<a class="dropdown-toggle" href="/">首页 </a>--}}
-
-                {{--</li>--}}
-                {{--<li class="dropdown @if($url == '/blog')active @endif">--}}
-                    {{--<a class="dropdown-toggle" href="{{url('blog/')}}">博客  </a>--}}
-                {{--</li>--}}
-            {{--</ul>--}}
-        {{--</div>--}}
-        <!-- BEGIN TOP NAVIGATION MENU -->
     </div>
 </div>
 <!-- END HEADER -->
