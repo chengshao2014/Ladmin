@@ -7,32 +7,23 @@
     <!-- BEGIN BREADCRUMBS -->
     <div class=" breadcrumbs margin-bottom-40">
         <div class="container">
-            {{--<div class="col-md-4 col-sm-4">--}}
-                {{--<h1>博客</h1>--}}
-            {{--</div>--}}
-            {{--<div class="col-md-8 col-sm-8">--}}
-                {{--<ul class="pull-right breadcrumb">--}}
-                    {{--<li><a href="/">首页</a></li>--}}
-                    {{--<li><a href="JavaScript:void(0)">博客列表</a></li>--}}
-                {{--</ul>--}}
-            {{--</div>--}}
             <div class="header_sub">
                 <div class="h_menu">
                     <ul>
                         <li class="active">
-                            <a href="/blog">Home</a>
+                            <a href="">首页</a>
                         </li>
                         <li class="active">
-                            <a href="/blog">BLOG</a>
+                            <a href="/blog">博客</a>
                         </li>
                         <li class="active">
-                            <a href="/blog">VIDEO</a>
+                            <a href="/blog">视频</a>
                         </li>
                         <li class="active">
-                            <a href="/blog">CONTACT  US</a>
+                            <a href="/blog">留言板</a>
                         </li>
                         <li class="active">
-                            <a href="/blog">MESSAGE</a>
+                            <a href="/blog">关于我们</a>
                         </li>
                     </ul>
                 </div>
@@ -51,63 +42,22 @@
     <!-- END BREADCRUMBS -->
 
     <!-- BEGIN CONTAINER -->
-    <div class="container min-hight">
-        <!-- BEGIN BLOG -->
-        {{--<div class="row">--}}
-            <!-- BEGIN LEFT SIDEBAR -->
-            {{--<div class="col-md-9 col-sm-9 ">--}}
-                {{--<div class=" blog-list margin-bottom-40 ">--}}
-                    {{--@foreach($article_list as $article)--}}
-                        {{--<div class="row">--}}
-                            {{--<div class="col-md-4 col-sm-4">--}}
-                                {{--<a href="/blog/{{$article['en_id']}}"> <img src="{{$article['thumb']}}" alt="" class="img-responsive"></a>--}}
-                            {{--</div>--}}
-                            {{--<div class="col-md-8 col-sm-8">--}}
-                                {{--<h2><a href="/blog/{{$article['en_id']}}">{{$article['title']}}</a></h2>--}}
-                                {{--<ul class="blog-info">--}}
-                                    {{--<li><i class="fa fa-calendar"></i>{{$article['created_at']}} </li>--}}
-                                    {{--<li><i class="fa fa-tags"></i>{{$article['name']}} </li>--}}
-                                {{--</ul>--}}
-                                {{--<p>{{$article['desc']}}</p>--}}
-                                {{--<a class="more" href="/blog/{{$article['en_id']}}">阅读全文 <i class="fa fa-angle-right"></i></a>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                        {{--<hr class="blog-post-sep">--}}
-                    {{--@endforeach--}}
-
-
-                    {{--<div class="text-center">--}}
-                        {{--{!! $article_list->render() !!}--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            <!-- END LEFT SIDEBAR -->
-
-            <!-- BEGIN RIGHT SIDEBAR -->
-            {{--<div class="col-md-3 col-sm-3 ">--}}
-
-                {{--<!-- BEGIN BLOG TAGS -->--}}
-                {{--<div class="blog-tags margin-bottom-20 blog-sidebar white_bg panel panel-body">--}}
-                    {{--<div class="text-center">--}}
-                        {{--<h2>关注我</h2>--}}
-                        {{--<hr>--}}
-                    {{--</div>--}}
-
-                    {{--<ul>--}}
-                        {{--@foreach($category_list as $category)--}}
-
-                        {{--<li><a href="#"><i class="fa fa-tags"></i>{{$category['name']}}</a></li>--}}
-
-                        {{--@endforeach--}}
-
-                    {{--</ul>--}}
-                {{--</div>--}}
-                <!-- END BLOG TAGS -->
-            {{--</div>--}}
-            <!-- END RIGHT SIDEBAR -->
-        {{--</div>--}}
-        <!-- END BEGIN BLOG -->
-    </div>
+    {{--<div class="container min-hight">--}}
+        <div class="main-container" data-reactid=".rcqd848hs0.0.1">
+            <section class="blog-box-container">
+                <div class="blog-timeline-box" data-reactid=".rcqd848hs0.0.1.0:0.0">
+                    <div data-reactid=".rcqd848hs0.0.1.0:0.0.0" class="blog-timeline">
+                        <a data-reactid=".rcqd848hs0.0.1.0:0.0.0.0" href="/blog">
+                            <div data-reactid=".rcqd848hs0.0.1.0:0.0.0.0.0" class="blog-category">
+                                <i data-reactid=".rcqd848hs0.0.1.0:0.0.0.0.0.0" class="fa fa-refresh"></i></div></a>
+                        <div data-reactid=".rcqd848hs0.0.1.0:0.0.0.1" class="blog-time">12月28日</div>
+                        <div data-reactid=".rcqd848hs0.0.1.0:0.0.0.2" class="blog-author">
+                            <img data-reactid=".rcqd848hs0.0.1.0:0.0.0.2.0" src="https://dn-coding-net-production-static.qbox.me/512b2a62-956b-4ef8-8e84-b3c66e71468f.png?imageMogr2/auto-orient/format/png/crop/!300x300a0a0" class="avatar">
+                            <a data-reactid=".rcqd848hs0.0.1.0:0.0.0.2.1" href="/author/coding">coding</a></div></div>
+                </div>
+            </section>
+        </div>
+    {{--</div>--}}
     <!-- END CONTAINER -->
 
 </div>
