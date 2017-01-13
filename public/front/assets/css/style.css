@@ -2589,13 +2589,9 @@ li [class*=" fa-"].icon-large {
     margin-bottom: 4px;
 	/*border:solid 1px blue;*/
 	height:100px;
-	width:50%;
 }
 
-.h_menu ul li .active a{
-    border-bottom:2px solid #00bac6;
-    color:#00bac6;
-}
+
 .h_menu ul li a{
     color:#555555;
     display:block;
@@ -2616,22 +2612,30 @@ ol,ul{
     margin:0px;
     padding:0px;
 }
+/** mod by AChan **/
 .header_sub{
-    padding:0 4%;
+    padding:0 10%;
 	/*border:1px solid red;*/
 	height:100px;
 }
 .h_menu ul li a:hover{
     color:#00a8c6;
     font-size:16px;
-    text-decoration: underline;
+	border-bottom:2px solid #00bac6;
+    /*text-decoration: underline;*/
 
+}
+
+
+.h_menu ul li a:active{
+	border-bottom:2px solid #00bac6;
+	color:#00bac6;
 }
 .navbar > .container .navbar-brand{
 	margin-left:10%;
 }
 .h_search{
-	float:left;
+	float:right;
 	border:1px solid rgb(216, 216, 216);
 	margin:30px 0;
 	position: relative;
@@ -2661,6 +2665,15 @@ ol,ul{
 	right:0;
 	width:14.33%;
 }
+
+/*.h_find{*/
+	/*width:auto;*/
+	/*height:100%;*/
+	/*margin:0 auto;*/
+	/*!*border:1px solid red;*!*/
+	/*float:right;*/
+	/*position:relative;*/
+/*}*/
 /*.container .navbar-header .navbar-brand{*/
 	/*margin-left:155px;*/
 	/*position:absolute*/

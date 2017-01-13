@@ -26,7 +26,7 @@
                             <a href="/blog">BLOG</a>
                         </li>
                         <li class="active">
-                            <a href="/blog">VIDIO</a>
+                            <a href="/blog">VIDEO</a>
                         </li>
                         <li class="active">
                             <a href="/blog">CONTACT  US</a>
@@ -36,13 +36,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="h_search">
-                    <form>
-                        <input type="text" placeholder="search something..." value="">
-                        <input type="submit" value="">
-                    </form>
+                <div class="h_find">
+                    <div class="h_search">
+                        <form>
+                            <input type="text" placeholder="search something..." value="">
+                            <input type="submit" value="">
+                        </form>
+                    </div>
                 </div>
-
             </div>
 
         </div>
