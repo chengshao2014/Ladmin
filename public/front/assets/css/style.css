@@ -2591,10 +2591,7 @@ li [class*=" fa-"].icon-large {
 	height:100px;
 }
 
-.h_menu ul li .active a{
-    border-bottom:2px solid #00bac6;
-    color:#00bac6;
-}
+
 .h_menu ul li a{
     color:#555555;
     display:block;
@@ -2624,8 +2621,15 @@ ol,ul{
 .h_menu ul li a:hover{
     color:#00a8c6;
     font-size:16px;
-    text-decoration: underline;
+	border-bottom:2px solid #00bac6;
+    /*text-decoration: underline;*/
 
+}
+
+
+.h_menu ul li a:active{
+	border-bottom:2px solid #00bac6;
+	color:#00bac6;
 }
 .navbar > .container .navbar-brand{
 	margin-left:10%;
