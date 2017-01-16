@@ -528,7 +528,7 @@ Header and header elements.
     -webkit-transition:margin 0.2s ease-in-out;
     -o-transition:margin 0.2s ease-in-out;
     transition:margin 0.2s ease-in-out;
-	margin:20px;
+	margin:5px;
 }
 
 .header .navbar-nav li a {
@@ -2683,21 +2683,25 @@ ol,ul{
 .main-container{
 	margin-left:140px;
 	max-width:1110px;
-	height: 980px;
+	max-height: 4000px;
 	padding:0 1em;
+	min-height:1200px;
 	/*border:1px solid blue;*/
 }
 .blog-box-container::before{
 	border-left: 2px solid #cfdbe4;
 	content:"";
-	height:100%;
+	height:73%;
 	left:180px;
 	position:absolute;
 	/*top:10px;*/
 	width:1px;
 }
 
-
+.blog-box-container{
+	height:400px;
+	/*border:1px solid red;*/
+}
 /*@media screen and (max-width: 768px) {*/
 	/*.main-container {*/
 		/*padding: 0 0.2em;*/
@@ -2711,6 +2715,9 @@ ol,ul{
 	/*top:0;*/
 	width:100px;
 	float:left;
+	height:400px;
+	/*border:1px solid lightblue;*/
+
 }
 
 .blog-timeline-box .blog-category, .blog-timeline-box .blog-category img {
@@ -2748,7 +2755,6 @@ ol,ul{
 	font-size: 12px;
 	height: 24px;
 	line-height: 24px;
-	margin-top: 30px;
 	text-align: center;
 	width: 60px;
 	position:absolute;
@@ -2849,4 +2855,86 @@ ol,ul{
 		width: auto;
 	}
 }
+
+/**文章DIV样式**/
+.blog-concise-box {
+	margin-top: 20px;
+	padding-left: 120px;
+}
+.blog-concise-box .blog-concise {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #dee8ef;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+	padding: 25px 40px;
+	position: relative;
+}
+.blog-concise-box .blog-concise::before {
+	background-color: #fff;
+	border-bottom: 1px solid #dee8ef;
+	border-left: 1px solid #dee8ef;
+	content: "";
+	height: 1em;
+	left: -0.6em;
+	position: absolute;
+	top: 28px;
+	transform: rotate(45deg);
+	transition: background 0.1s linear 0s;
+	width: 1em;
+	z-index: 2;
+}
+.blog-concise-box .blog-title {
+	font-size: 24px;
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+.blog-concise-box .blog-title a {
+	color: #0078c9;
+}
+.blog-concise-box .blog-cover {
+	border-radius: 8px;
+	margin-bottom: 32px;
+	max-height: 200px;
+	overflow: hidden;
+	text-align: center;
+}
+.blog-concise-box .blog-content {
+	color: #464b52;
+	font-size: 14px;
+	line-height: 28px;
+}
+.blog-concise-box .blog-operate {
+	display: none;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+.blog-concise-box a {
+	color: rgba(41, 46, 53, 0.6);
+}
+.blog-concise-box .blog-stat {
+	color: #999;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.blog-concise-box .blog-stat span {
+	margin-right: 20px;
+}
+.blog-concise-box .blog-stat span i {
+	margin-right: 8px;
+}
+@media screen and (max-width: 768px) {
+	.blog-concise-box {
+		padding-left: 0;
+	}
+	.blog-concise-box .blog-concise::before {
+		content: normal;
+	}
+	.blog-concise-box .blog-concise {
+		padding: 1em;
+	}
+}
+
+
+
+
 /** 自定义样式end**/
