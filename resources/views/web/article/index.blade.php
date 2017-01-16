@@ -35,19 +35,82 @@
 
     <!-- BEGIN CONTAINER -->
     {{--<div class="container min-hight">--}}
-        <div class="main-container" data-reactid=".rcqd848hs0.0.1">
+        <div class="main-container">
+            @foreach($article_list as $article)
             <section class="blog-box-container">
-                <div class="blog-timeline-box" data-reactid=".rcqd848hs0.0.1.0:0.0">
-                    <div data-reactid=".rcqd848hs0.0.1.0:0.0.0" class="blog-timeline">
-                        <a data-reactid=".rcqd848hs0.0.1.0:0.0.0.0" href="/blog">
-                            <div data-reactid=".rcqd848hs0.0.1.0:0.0.0.0.0" class="blog-category">
-                                <i data-reactid=".rcqd848hs0.0.1.0:0.0.0.0.0.0" class="fa fa-refresh"></i></div></a>
-                        <div data-reactid=".rcqd848hs0.0.1.0:0.0.0.1" class="blog-time">12月28日</div>
-                        <div data-reactid=".rcqd848hs0.0.1.0:0.0.0.2" class="blog-author">
-                            <img data-reactid=".rcqd848hs0.0.1.0:0.0.0.2.0" src="https://dn-coding-net-production-static.qbox.me/512b2a62-956b-4ef8-8e84-b3c66e71468f.png?imageMogr2/auto-orient/format/png/crop/!300x300a0a0" class="avatar">
-                            <a data-reactid=".rcqd848hs0.0.1.0:0.0.0.2.1" href="/author/coding">coding</a></div></div>
+                <div class="blog-timeline-box">
+                    <div class="blog-timeline">
+                        <a  href="/blog">
+                            <div  class="blog-category">
+                                <i class="fa fa-refresh"></i>
+                            </div>
+                        </a>
+                        <div class="blog-time"><?php echo date('m-d',strtotime($article['created_at'])) ?></div>
+                        <div class="blog-author">
+                            <img src = "backend/img/logo/logo_X3.png.png" class="avatar">
+                            <a href="/author/coding">{{$article['author']}}</a></div></div>
                 </div>
-            </section>
+                <div class="blog-concise-box">
+                    <div class="blog-concise">
+                        <div class="blog-title">
+                            <a href="/blog/{{$article['en_id']}}">{{$article['title']}}</a></div>
+                        <div class="blog-cover">
+                            <img src="{{$article['thumb']}}">
+                        </div>
+                        <div class="ellipsis-text blog-content mui-ellipsis-3">
+                            {{$article['desc']}}
+                        </div>
+                        <div class="blog-operate">
+                                <span>
+                                    <a href="/blog/{{$article['en_id']}}">
+                                        <i class="fa fa-edit-alt"></i></a></span>
+                            <span ><a href="">
+                                        <i class="fa fa-trash"></i></a></span></div>
+                        <div class="blog-stat">
+                                <span class="blog-views">
+                                    <a href="https://blog.coding.net/blog/Introducing-Coding-Enterprise">
+                                        <i class="fa fa-eye"></i>
+                                        <span >368</span></a></span>
+                            <span class="blog-comments">
+                                    <a href="https://blog.coding.net/blog/Introducing-Coding-Enterprise#comments">
+                                        <i class="fa fa-comment"></i>
+                                        <span>6</span></a></span>
+                        </div>
+                    </div>
+                </div>
+            </section>@endforeach
+            {{--<section class="blog-box-container">--}}
+                {{--<div class="blog-timeline-box">--}}
+                    {{--<div class="blog-timeline">--}}
+                        {{--<a  href="/blog">--}}
+                            {{--<div  class="blog-category">--}}
+                                {{--<i class="fa fa-refresh"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                        {{--<div class="blog-time">12月28日</div>--}}
+                        {{--<div class="blog-author">--}}
+                            {{--<img src = "backend/img/logo/logo_X3.png.png" class="avatar">--}}
+                            {{--<a href="/author/coding">coding</a></div></div>--}}
+                {{--</div>--}}
+            {{--</section>--}}
+            {{--<section class="blog-box-container">--}}
+                {{--<div class="blog-timeline-box">--}}
+                    {{--<div class="blog-timeline">--}}
+                        {{--<a  href="/blog">--}}
+                            {{--<div  class="blog-category">--}}
+                                {{--<i class="fa fa-refresh"></i>--}}
+                            {{--</div>--}}
+                        {{--</a>--}}
+                        {{--<div class="blog-time">12月28日</div>--}}
+                        {{--<div class="blog-author">--}}
+                            {{--<img src = "backend/img/logo/logo_X3.png.png" class="avatar">--}}
+                            {{--<a href="/author/coding">coding</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{----}}
+                {{--</div>--}}
+            {{--</section>--}}
+
         </div>
     {{--</div>--}}
     <!-- END CONTAINER -->
