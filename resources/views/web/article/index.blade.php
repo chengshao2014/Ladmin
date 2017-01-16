@@ -6,38 +6,30 @@
 
     <!-- BEGIN BREADCRUMBS -->
     <div class=" breadcrumbs margin-bottom-40">
-        <div class="container">
-            <div class="header_sub">
-                <div class="h_menu">
-                    <ul>
-                        <li class="active">
-                            <a href="">首页</a>
-                        </li>
-                        <li class="active">
-                            <a href="/blog">博客</a>
-                        </li>
-                        <li class="active">
-                            <a href="/blog">视频</a>
-                        </li>
-                        <li class="active">
-                            <a href="/blog">留言板</a>
-                        </li>
-                        <li class="active">
-                            <a href="/blog">关于我们</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="h_find">
-                    <div class="h_search">
-                        <form>
-                            <input type="text" placeholder="search something..." value="">
-                            <input type="submit" value="">
-                        </form>
-                    </div>
-                </div>
-            </div>
+        {{--<div class="container">--}}
+            {{--<div class="header_sub">--}}
+                {{--<div class="h_menu">--}}
+                    {{--<ul>--}}
+                        {{--<li class="active">--}}
+                            {{--<a href="/">首页</a>--}}
+                        {{--</li>--}}
+                        {{--<li class="active">--}}
+                            {{--<a href="/blog">博客</a>--}}
+                        {{--</li>--}}
+                        {{--<li class="active">--}}
+                            {{--<a href="/blog">视频</a>--}}
+                        {{--</li>--}}
+                        {{--<li class="active">--}}
+                            {{--<a href="/blog">留言板</a>--}}
+                        {{--</li>--}}
+                        {{--<li class="active">--}}
+                            {{--<a href="/blog">关于我们</a>--}}
+                        {{--</li>--}}
+                    {{--</ul>--}}
+                {{--</div>--}}
 
-        </div>
+            {{--</div>--}}
+        {{--</div>--}}
     </div>
     <!-- END BREADCRUMBS -->
 

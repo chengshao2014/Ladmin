@@ -38,6 +38,7 @@
 
     <div class="container">
         {{--<div class="navbar-header">--}}
+
         <div>
             <!-- BEGIN RESPONSIVE MENU TOGGLER -->
             <button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
@@ -52,6 +53,43 @@
             </a>
             <!-- END LOGO -->
         </div>
+        <div class="h_menu">
+            <ul>
+                <li class="active">
+                    <a href="/">首页</a>
+                </li>
+                <li class="active">
+                    <a href="/blog">博客</a>
+                </li>
+                <li class="active">
+                    <a href="/blog">视频</a>
+                </li>
+                <li class="active">
+                    <a href="/blog">留言板</a>
+                </li>
+                <li class="active">
+                    <a href="/blog">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        {{--<div class="h_find">--}}
+            {{--<div class="h_search">--}}
+                {{--<form>--}}
+                    {{--<input type="text" placeholder="search something..." value="">--}}
+                    {{--<input type="submit" value="">--}}
+                {{--</form>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        <form method="get" action="/search" class="navbar-form visible-lg-inline-block">
+            <div class="input-group">
+                <input type="text" placeholder="全站搜索" name="q" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <span class="fa fa-search"></span>
+                    </button>
+                </span>
+            </div>
+        </form>
     </div>
 </div>
 <!-- END HEADER -->
