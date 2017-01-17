@@ -2699,7 +2699,7 @@ ol,ul{
 }
 
 .blog-box-container{
-	height:400px;
+	height:auto;
 	/*border:1px solid red;*/
 }
 /*@media screen and (max-width: 768px) {*/
@@ -2766,9 +2766,10 @@ ol,ul{
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	width: 100px;
-	margin-left:-10px;
+	margin-left:-30px;
 	position:absolute;
 	margin-top:150px;
+	line-height:20px;
 }
 .blog-timeline-box .blog-author img.avatar {
 	border-radius: 24px;
