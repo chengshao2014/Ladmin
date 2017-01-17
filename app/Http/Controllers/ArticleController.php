@@ -11,7 +11,7 @@ class ArticleController extends Controller {
 
     public function  index(ArticleRepository $articleRepository ,ArticleCategoryRepository $categoryRepository)
     {
-        $article_list = DB::table('article')->paginate(3);
+        $article_list = DB::table('article')->orderBy('id','desc')->paginate(2);
 //        $article_list = $articleRepository->getAll();
 //        foreach ($article_list as $k=>$article) {
 //
