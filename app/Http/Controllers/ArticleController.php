@@ -5,18 +5,22 @@ namespace App\Http\Controllers;
 use App\Repositories\ArticleCategoryRepository;
 use App\Repositories\ArticleRepository;
 use App\Services\IdEncryptService;
+use DB;
 
 class ArticleController extends Controller {
 
     public function  index(ArticleRepository $articleRepository ,ArticleCategoryRepository $categoryRepository)
     {
-        $article_list = $articleRepository->getAll();
-
-        foreach ($article_list as $k=>$article) {
-
-            $article_list[$k]['en_id'] = IdEncryptService::encryption_id($article['id']);
+        $article_list = DB::table('article')->paginate(3);
+//        $article_list = $articleRepository->getAll();
+//        foreach ($article_list as $k=>$article) {
+//
+//            $article_list[$k]['en_id'] = IdEncryptService::encryption_id($article['id']);
+//        }
+        foreach($article_list as $k => $article)
+        {
+            $article_list[$k]->en_id= IdEncryptService::encryption_id($article->id);
         }
-
         $category_list = $categoryRepository->getAll();
 
         $seo = [
