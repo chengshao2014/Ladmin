@@ -52,9 +52,15 @@ class ArticleCategoryController extends Controller {
         
     }
 
-    public function destroy($id)
+    public function destroy($id, ArticleCategoryRepository $ArticleCategory)
     {
-        
+        $result = $ArticleCategory->delete($id);
+        if($result) {
+            Flash::success(trans("alerts.articlecategory.soft_deleted_success"));
+        }else {
+            Flash::error(trans("alerts.serviceBusy"));
+        }
+        return redirect('/admin/ae_category');
     }
 
 

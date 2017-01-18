@@ -28,7 +28,8 @@ class ArticleController extends Controller {
     public function create(ArticleCategoryRepository $categoryRepository)
     {
         $category_list = $categoryRepository->getAll();
-       return view("admin.article.create",compact("category_list"));
+
+        return view("admin.article.create",compact("category_list"));
     }
 
     public function show($id ,ArticleRepository $articleRep){
