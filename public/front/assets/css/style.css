@@ -2765,8 +2765,8 @@ ol,ul{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	width: 100px;
-	margin-left:-30px;
+	width: 80px;
+	margin-left:-10px;
 	position:absolute;
 	margin-top:150px;
 	line-height:20px;
