@@ -3,7 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\ArticleCategory;
-
+use Auth;
 class ArticleCategoryRepository {
 
     public function cateGoryDataTable()

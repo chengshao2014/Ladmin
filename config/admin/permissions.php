@@ -50,8 +50,8 @@ return[
 	],
 	'articleCategory' =>[
 		'create' 	=> 'admin.articleCategory.create',
-		'edit' 		=> 'admin.articleCategory.edit',
-		'destroy' 	=> 'admin.articleCategory.delete',
+		'edit' 		=> 'admin.articlecategory.edit',
+		'destroy' 	=> 'admin.articlecategory.delete',
 		'trash' 	=> 'admin.article.trash',
 		'undo' 		=> 'admin.article.undo',
 		'audit'		=> 'admin.article.audit',

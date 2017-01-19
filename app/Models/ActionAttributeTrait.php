@@ -4,7 +4,7 @@ use Auth;
 trait ActionAttributeTrait{
 
 	protected $html_build;
-
+//	protected $status = True;
 	/**
 	 * 查看按钮
 	 * @param bool $type
