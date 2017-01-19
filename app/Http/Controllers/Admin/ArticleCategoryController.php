@@ -29,6 +29,11 @@ class ArticleCategoryController extends Controller {
         return view("admin.article_category.create",compact('category_list'));
     }
 
+    public function show($id ,ArticleCategoryRepository $ArticleCategory)
+    {
+        $article_category = $ArticleCategory->getArticleCategoryById($id);
+        return view("admin.article_category.show",compact("article_category"));
+    }
 
     public function store(ArticleCategoryRequest $request)
     {
@@ -39,7 +44,7 @@ class ArticleCategoryController extends Controller {
         } else {
             Flash::error(trans('alerts.serviceBusy'));
         }
-        return redirect(url("/admin/ae_category/create"));
+        return redirect(url("/admin/articleCategory/create"));
     }    
 
     public function edit($id)
@@ -60,7 +65,7 @@ class ArticleCategoryController extends Controller {
         }else {
             Flash::error(trans("alerts.serviceBusy"));
         }
-        return redirect('/admin/ae_category');
+        return redirect('/admin/articleCategory');
     }
 
 

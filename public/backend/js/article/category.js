@@ -6,7 +6,7 @@ var TableDatatablesAjax = function() {
             "serverSide": true,
             "searching" : false,
             "ajax": {
-                'url' : '/admin/ae_category',
+                'url' : '/admin/articleCategory',
                 "data": function ( d ) {
                     d.name = $('.filter input[name="name"]').val();
 

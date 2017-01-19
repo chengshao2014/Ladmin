@@ -10,7 +10,7 @@ class ArticleCategory extends Model
     protected $table = "article_category";
 
     protected  $fillable = ['name'];
-    protected $action = "articleCategory";
+    protected  $action = "articleCategory";
 
 
     public function article()

@@ -123,7 +123,8 @@ class ArticleRepository {
         return $article_list;
     }
 
-    public function getArticleById($id) {
+    public function getArticleById($id)
+    {
         try{
            $article = Article::findOrFail($id);
 

@@ -125,6 +125,6 @@ return [
 		'articleEdit' => '<i class="fa fa-cog"></i> 文章编辑',
 		'articleCategoryList' => '<i class="fa fa-cog"></i> 文章分类列表',
 		'articleCategoryCreate' => '<i class="fa fa-cog"></i> 文章分类添加',
-
+        'articleCategoryEdit' => '<i class="fa fa-cog"></i> 文章分类编辑',
 	]
 ];

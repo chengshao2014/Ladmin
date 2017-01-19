@@ -64,7 +64,7 @@ Route::group(['domain'=>env('ADMIN_DOMAIN'),'middleware' => ['web']],function(){
         $router->resource('article','ArticleController');
 
         //文章分类
-        $router->resource('ae_category','ArticleCategoryController');
+        $router->resource('articleCategory','ArticleCategoryController');
     });
 });
 

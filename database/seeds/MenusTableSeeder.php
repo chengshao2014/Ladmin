@@ -170,7 +170,7 @@ class MenusTableSeeder extends Seeder
         $article->language = "zh";
         $article->icon = "fa fa-heart";
         $article->slug = "admin.article.manage";
-        $article->url = "admin/article*,admin/ae_category*";
+        $article->url = "admin/article*,admin/articleCategory*";
         $article->description = "文章管理";
         $article->save();
 
@@ -190,7 +190,7 @@ class MenusTableSeeder extends Seeder
         $articleCategory->language = "zh";
         $articleCategory->icon = "fa fa-heart";
         $articleCategory->slug = "admin.article.categorylist";
-        $articleCategory->url = "admin/ae_category";
+        $articleCategory->url = "admin/articleCategory";
         $articleCategory->description = "分类列表";
         $articleCategory->save();
 

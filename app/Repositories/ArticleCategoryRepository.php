@@ -80,4 +80,20 @@ class ArticleCategoryRepository {
         return $category_list;
     }
 
+    /**
+     * 获取文章分类显示
+     * @param $id
+     * @return string
+     */
+    public function getArticleCategoryById($id)
+    {
+        try{
+            $articleCategory = ArticleCategory::findOrFail($id);
+
+        }catch (Exception $e){
+            return 'not find ArticleCategory';
+        }
+        return $articleCategory->toArray();
+    }
+
 }
