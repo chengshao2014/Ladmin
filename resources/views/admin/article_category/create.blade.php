@@ -41,7 +41,7 @@
 					    </div>
 					    @endif
               @include('flash::message')
-              <form role="form" class="form-horizontal" method="POST" action="{{url('admin/ae_category')}}">
+              <form role="form" class="form-horizontal" method="POST" action="{{url('admin/articleCategory')}}">
               		{!! csrf_field() !!}
                   <div class="form-body">
                       <div class="form-group form-md-line-input">

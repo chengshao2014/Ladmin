@@ -420,18 +420,27 @@ class PermissionsTableSeeder extends Seeder
 
         Permission::create([
             'name' => 'article_category create',
-            'slug' => 'admin.article.categorycreate',
+            'slug' => 'admin.article_category.create',
             'description' => '文章分类创建'
         ]);
 
         Permission::create([
-            'name' => 'articleCategory edit',
-            'slug' => 'admin.articlecategory.edit',
+            'name' => 'article_category edit',
+            'slug' => 'admin.articleCategory.edit',
             'description' => '文章分类编辑'
         ]);
 
-        
+		Permission::create([
+			'name' => 'article_category ban',
+			'slug' => 'admin.articleCategory.trash',
+			'description' => '文章分类禁用'
+		]);
 
+		Permission::create([
+			'name' => 'article_category delete',
+			'slug' => 'admin.articleCategory.delete',
+			'description' => '文章分类删除',
+		]);
 
     }
 }
