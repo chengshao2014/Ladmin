@@ -120,6 +120,7 @@
   $(function() {
     TableDatatablesAjax.init();
     $(document).on('click','#destory',function() {
+        var id = $(this).attr('data-id');
       layer.msg('{{trans('alerts.deleteTitle')}}', {
         time: 0, //不自动关闭
         btn: ['{{trans('crud.destory')}}', '{{trans('crud.cancel')}}'],

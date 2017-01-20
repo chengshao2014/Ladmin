@@ -61,7 +61,7 @@ class ArticleCategoryController extends Controller {
     {
         $result = $ArticleCategory->delete($id);
         if($result) {
-            Flash::success(trans("alerts.articlecategory.soft_deleted_success"));
+            Flash::success(trans("alerts.article_category.soft_deleted_success"));
         }else {
             Flash::error(trans("alerts.serviceBusy"));
         }

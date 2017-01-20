@@ -4,7 +4,7 @@ use Auth;
 trait ActionAttributeTrait{
 
 	protected $html_build;
-//	protected $status = True;
+	protected $status = True;
 	/**
 	 * 查看按钮
 	 * @param bool $type
@@ -88,7 +88,8 @@ trait ActionAttributeTrait{
 	{
 		if (($this->status == config('admin.global.status.active'))) {
 			if (Auth::user()->can(config('admin.permissions.'.$this->action.'.destroy'))) {
-				$this->html_build .= '<a href="javascript:;" onclick="return false" class="btn btn-xs btn-danger tooltips" data-container="body" data-original-title="' . trans('crud.destory') . '"  data-placement="top" id="destory"><i class="fa fa-trash"></i><form action="'.url('admin/'.$this->action.'/'.$this->id).'" method="POST" name="delete_item" style="display:none"><input type="hidden" name="_method" value="delete"><input type="hidden" name="_token" value="'.csrf_token().'"></form></a>';
+				$this->html_build .= '<a href="javascript:;" onclick="return false" class="btn btn-xs btn-danger tooltips" data-container="body" data-original-title="' . trans('crud.destory') . '"  data-placement="top" id="destory"><i class="fa fa-trash"></i><form action="'.url('admin/'.$this->action.'/'.$this->id).'" method="POST" name="delete_item" style="display:none"><input type="hidden" name="_method" value="delete"><input type="hidden" name="_token" value="'.csrf_token().'">
+				<input type="hidden" name="data-id" value="'.$this->id.'"></form></a>';
 			}
 		}
 		return $this;

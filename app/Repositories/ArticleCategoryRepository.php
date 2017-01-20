@@ -96,4 +96,15 @@ class ArticleCategoryRepository {
         return $articleCategory->toArray();
     }
 
+    public function delete($id)
+    {
+        $result = ArticleCategory::destroy($id);
+
+        if($result) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 }
