@@ -26,7 +26,7 @@ return[
 	//权限
 	'permission' => [
 		// 控制是否显示查看按钮
-		'show' => false,
+		'show' => true,
 		// trait 中的 action 参数
 		'action' => 'permission',
 	],
@@ -58,7 +58,7 @@ return[
 		// trait 中的 action 参数
 		'action' => 'article',
 	],
-	//文章
+	//文章分类
 	'articleCategory' => [
 		// 控制是否显示查看按钮
 		'show' => true,
