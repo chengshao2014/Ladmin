@@ -54,10 +54,14 @@
                     </div>
                 </div>
             </section>@endforeach
+
         </div>
+    <div class="nav" style="height:24px;width:100%;">
+
+    </div>
     <!-- END CONTAINER -->
 </div>
-<div class="text-center"">
+<div class="text-center">
 {!! $article_list->links() !!}
 </div>
 <!-- END BEGIN PAGE CONTAINER -->

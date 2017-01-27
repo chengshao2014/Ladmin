@@ -111,7 +111,7 @@
                 <li class="active-bar"><a href="/">首页</a></li>
                 <li class=""><a href="/blog">博客</a></li>
                 <li class=""><a href="/video">视频</a></li>
-                <li class=""><a href="/message">留言板</a></li>
+            <li class=""><a href="/message">留言板</a></li>
                 <li class=""><a href="/about">关于我们</a></li>
             </ul>
         </div>
