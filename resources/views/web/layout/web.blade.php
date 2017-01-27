@@ -20,79 +20,116 @@
 
     <!-- BEGIN THEME STYLES -->
 
-    <link href="/front/assets/css/style.css" rel="stylesheet" type="text/css"/>
+
     {{--<link href="/front/assets/css/blog.style.css" rel="stylesheet" type="text/css"/>--}}
     <link href="/front/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
     <link href="/front/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
     <link href="/front/assets/css/custom.css" rel="stylesheet" type="text/css"/>
     <!-- END THEME STYLES -->
+    <link href="/front/assets/css/style.css" rel="stylesheet" type="text/css"/>
     @yield('css')
     <link rel="shortcut icon" href="favicon.ico" />
+
 
 </head>
 <body>
 
 
 <!-- BEGIN HEADER -->
-<div class="header navbar navbar-default navbar-static-top">
+{{--<div class="header navbar navbar-default navbar-static-top">--}}
 
-    <div class="container">
-        {{--<div class="navbar-header">--}}
-
-        <div>
-            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-            <button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
+    {{--<div class="container">--}}
+        {{--<div>--}}
+            {{--<button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">--}}
+                {{--<span class="icon-bar"></span>--}}
+                {{--<span class="icon-bar"></span>--}}
+                {{--<span class="icon-bar"></span>--}}
+            {{--</button>--}}
+            {{--<a class="navbar-brand logo-v1" href="/">--}}
+                {{--<img src="/front/assets/img/logo.png" id="logoimg" alt="" >--}}
+            {{--</a>--}}
+        {{--</div>--}}
+        {{--<div class="h_menu">--}}
+            {{--<ul>--}}
+                {{--<li class="active">--}}
+                    {{--<a href="/">首页</a>--}}
+                {{--</li>--}}
+                {{--<li class="active">--}}
+                    {{--<a href="/blog">博客</a>--}}
+                {{--</li>--}}
+                {{--<li class="active">--}}
+                    {{--<a href="/blog">视频</a>--}}
+                {{--</li>--}}
+                {{--<li class="active">--}}
+                    {{--<a href="/blog">留言板</a>--}}
+                {{--</li>--}}
+                {{--<li class="active">--}}
+                    {{--<a href="/blog">关于我们</a>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
+        {{--</div>--}}
+        {{--<form method="get" action="/search" class="navbar-form visible-lg-inline-block">--}}
+            {{--<div class="input-group">--}}
+                {{--<input type="text" placeholder="全站搜索" name="q" class="form-control">--}}
+                {{--<span class="input-group-btn">--}}
+                    {{--<button class="btn btn-default" type="submit">--}}
+                        {{--<span class="fa fa-search"></span>--}}
+                    {{--</button>--}}
+                {{--</span>--}}
+            {{--</div>--}}
+        {{--</form>--}}
+    {{--</div>--}}
+{{--</div>--}}
+<nav class="navbar navbar-default lnmp-header" style="background-color: black;" role="navigation">
+    <div class="container-fluid container">
+        {{--<div style="width:300px;float:right;height:40px;margin-top:12px">--}}
+            {{--<form method="get" action="/search" class="navbar-form visible-lg-inline-block">--}}
+            {{--<div class="input-group">--}}
+                {{--<input type="text" placeholder="全站搜索" name="q" class="form-control">--}}
+                {{--<span class="input-group-btn">--}}
+                    {{--<button class="btn btn-default" type="submit">--}}
+                        {{--<span class="fa fa-search"></span>--}}
+                    {{--</button>--}}
+                {{--</span>--}}
+            {{--</div>--}}
+            {{--</form>--}}
+        {{--</div>--}}
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- END RESPONSIVE MENU TOGGLER -->
-            <!-- BEGIN LOGO (you can use logo image instead of text)-->
-            <a class="navbar-brand logo-v1" href="/">
+            <a class="navbar-brand" href="#">
                 <img src="/front/assets/img/logo.png" id="logoimg" alt="" >
             </a>
-            <!-- END LOGO -->
         </div>
-        <div class="h_menu">
-            <ul>
-                <li class="active">
-                    <a href="/">首页</a>
-                </li>
-                <li class="active">
-                    <a href="/blog">博客</a>
-                </li>
-                <li class="active">
-                    <a href="/blog">视频</a>
-                </li>
-                <li class="active">
-                    <a href="/blog">留言板</a>
-                </li>
-                <li class="active">
-                    <a href="/blog">关于我们</a>
-                </li>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active-bar"><a href="/">首页</a></li>
+                <li class=""><a href="/blog">博客</a></li>
+                <li class=""><a href="/video">视频</a></li>
+                <li class=""><a href="/message">留言板</a></li>
+                <li class=""><a href="/about">关于我们</a></li>
             </ul>
         </div>
-        {{--<div class="h_find">--}}
-            {{--<div class="h_search">--}}
-                {{--<form>--}}
-                    {{--<input type="text" placeholder="search something..." value="">--}}
-                    {{--<input type="submit" value="">--}}
-                {{--</form>--}}
+
+        {{--<form method="get" action="/search" class="navbar-form visible-lg-inline-block">--}}
+            {{--<div class="input-group">--}}
+                {{--<input type="text" placeholder="全站搜索" name="q" class="form-control">--}}
+                {{--<span class="input-group-btn">--}}
+                {{--<button class="btn btn-default" type="submit">--}}
+                    {{--<span class="fa fa-search"></span>--}}
+                {{--</button>--}}
+            {{--</span>--}}
             {{--</div>--}}
-        {{--</div>--}}
-        <form method="get" action="/search" class="navbar-form visible-lg-inline-block">
-            <div class="input-group">
-                <input type="text" placeholder="全站搜索" name="q" class="form-control">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                        <span class="fa fa-search"></span>
-                    </button>
-                </span>
-            </div>
-        </form>
+        {{--</form>--}}
     </div>
-</div>
-<!-- END HEADER -->
+
+
+</nav>
 
 @yield('content')
 
