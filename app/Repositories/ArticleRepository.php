@@ -9,7 +9,6 @@ class ArticleRepository {
 
     /**
      * get all article
-     *
      * @itas
      * @DateTime 2016-08-27
      * @return   array
@@ -23,7 +22,6 @@ class ArticleRepository {
 
     /**
      * article dataTables data
-     *
      * @return array
      */
     public function ajaxIndex()
@@ -38,8 +36,6 @@ class ArticleRepository {
         $desc = request('desc' ,'');
         $author  = request('author','');
         $from = request('from','');
-
-
 
         $created_at_from = request('created_at_from' ,'');
         $created_at_to = request('created_at_to' ,'');
@@ -171,7 +167,6 @@ class ArticleRepository {
 
     /**
      * 更新文章浏览数
-     *
      * @param $article_id
      * @return int
      */
