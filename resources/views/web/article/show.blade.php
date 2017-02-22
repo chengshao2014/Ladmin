@@ -140,8 +140,10 @@
 	<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
 	<script type="text/javascript">
 		window.changyan.api.config({
-			appid: 'cysBeFLSg',
-			conf: '85d88bacecaced21c43f8ded47c1760f'
+//			appid: 'cysBeFLSg',
+//			conf: '85d88bacecaced21c43f8ded47c1760f'
+			appid: 'cysONUm3B',
+			conf : 'fbc0579d090ab444e5b7489d51dff88e',
 		});
 	</script>
 
