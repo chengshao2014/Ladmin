@@ -17,25 +17,23 @@ class ArticleController extends Controller {
 
     public function index( ArticleRepository $repository)
     {
-        if(request()->ajax()) {
+        if(request()->ajax())
+        {
             $data = $repository->ajaxIndex();
             return response()->json($data);
         }
-
         return view('admin.article.list');
     }
 
     public function create(ArticleCategoryRepository $categoryRepository)
     {
         $category_list = $categoryRepository->getAll();
-
         return view("admin.article.create",compact("category_list"));
     }
 
-    public function show($id ,ArticleRepository $articleRep){
-
+    public function show($id ,ArticleRepository $articleRep)
+    {
         $article = $articleRep->getArticleById($id);
-
         return view("admin.article.show",compact("article"));
     }
 

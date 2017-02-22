@@ -2519,8 +2519,9 @@ li [class*=" fa-"].icon-large {
     width: 100%;
     min-height: 630px;
     height: 50vw;
-    background: url(http://o6hc01bvr.bkt.clouddn.com/20161222084206.jpg) no-repeat center center;
-    background-size: cover;
+    /*background: url(http://o6hc01bvr.bkt.clouddn.com/20161222084206.jpg) no-repeat center center;*/
+    background: url(../img/bg/bg_child.jpg) no-repeat center center;
+	background-size: cover;
 }
 
 .banner_title{

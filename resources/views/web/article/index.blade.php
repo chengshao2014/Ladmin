@@ -41,15 +41,21 @@
                                         <i class="fa fa-edit-alt"></i></a></span>
                             <span ><a href="">
                                         <i class="fa fa-trash"></i></a></span></div>
+                        <div class="blog-operate">
+                                <span>
+                                    <a href="/blog/{{$article->en_id}}"><i class="fa fa-edit-alt"></i></a></span>
+                            <span ><a href=""><i class="fa fa-trash"></i></a></span>
+                        </div>
                         <div class="blog-stat">
                                 <span class="blog-views">
-                                    <a href="https://blog.coding.net/blog/Introducing-Coding-Enterprise">
+                                    <a href="/blog/{{$article->en_id}}">
                                         <i class="fa fa-eye"></i>
-                                        <span >368</span></a></span>
+                                        <span >{{$article->view_count}}</span></a></span>
                             <span class="blog-comments">
-                                    <a href="https://blog.coding.net/blog/Introducing-Coding-Enterprise#comments">
-                                        <i class="fa fa-comment"></i>
-                                        <span>6</span></a></span>
+                                    <a href="/blog/{{$article->en_id}}#SOHUCS"><i class="fa fa-comment"></i>
+                                        <span id = "sourceId::{{$article->id}}" class = "cy_cmt_count" ></span>
+                                    </a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -65,7 +71,9 @@
 {!! $article_list->links() !!}
 </div>
 <!-- END BEGIN PAGE CONTAINER -->
-
+<script id="cy_cmt_num"
+        src="http://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cysONUm3B">
+</script>
 @endsection
 
 @section('js')

@@ -10,7 +10,16 @@ Route::get('/blog', 'ArticleController@index');
 //文章显示页面
 Route::get('/blog/{id}', 'ArticleController@show');
 
+//关于我们显示页面
+Route::get('/about', 'WebInfoController@about');
 
+//视频页面
+Route::get('/video', 'WebInfoController@video');
+//留言板
+$router->group(['namespace' => 'Index'], function($router){
+    $router->get('/message', 'WebMessageController@show');
+});
+//Route::get('/message', 'WebMessageController@show');
 //微信
 Route::group(['prefix'=>"wechat"],function(){
     Route::any('', 'WechatController@serve');

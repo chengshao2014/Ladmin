@@ -45,7 +45,7 @@
 						<textarea style="display: none" name="editormd-markdown-doc">{{$article['content']}}</textarea>
 					</div>
 
-					<div class="white_bg padding20">
+					<div class="white_bg padding20" name="SOHUCS">
 						<hr class="blog-post-sep">
 
 						<!-- 代码1：放在页面需要展示的位置  -->
