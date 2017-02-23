@@ -15,7 +15,7 @@ use Flash;
 class ArticleController extends Controller {
 
 
-    public function index( ArticleRepository $repository)
+    public function index(ArticleRepository $repository)
     {
         if(request()->ajax())
         {

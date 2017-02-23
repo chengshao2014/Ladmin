@@ -57,7 +57,7 @@
 
 						<div id="SOHUCS" sid="{{$article['id']}}"></div>
 						<script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
-						<script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cysBeFLSg"></script>
+						<script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cysONUm3B"></script>
 					</div>
 
 				</div>

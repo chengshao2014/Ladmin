@@ -6,7 +6,7 @@
  * Time: 17:54
  */
 
-namespace App\Http\Controllers\Index;
+namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 
 class WebMessageController extends Controller

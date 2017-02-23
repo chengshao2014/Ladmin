@@ -10,14 +10,13 @@ Route::get('/blog', 'ArticleController@index');
 //文章显示页面
 Route::get('/blog/{id}', 'ArticleController@show');
 
-//关于我们显示页面
-Route::get('/about', 'WebInfoController@about');
-
-//视频页面
-Route::get('/video', 'WebInfoController@video');
 //留言板
-$router->group(['namespace' => 'Index'], function($router){
+$router->group(['namespace' => 'Front'], function($router){
     $router->get('/message', 'WebMessageController@show');
+    //视频页面
+    $router->get('/video', 'WebVideoController@show');
+    //关于我们显示页面
+    $router->get('/about', 'WebInfoController@about');
 });
 //Route::get('/message', 'WebMessageController@show');
 //微信
