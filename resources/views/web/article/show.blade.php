@@ -5,8 +5,9 @@
 @endsection
 
 @section('content')
-		<!-- BEGIN PAGE CONTAINER -->
-<div class="page-container page-body-background">
+	<!-- BEGIN PAGE CONTAINER -->
+
+	<div class="page-container page-body-background">
 
 	<!-- BEGIN BREADCRUMBS -->
 	<div class=" breadcrumbs margin-bottom-40">
@@ -95,10 +96,12 @@
 
 </div>
 <!-- END BEGIN PAGE CONTAINER -->
+
 @endsection
 
 
 @section('js')
+
 	<script src="{{asset('backend/plugins/md-editor/lib/marked.min.js')}}"></script>
 	<script src="{{asset('backend/plugins/md-editor/lib/prettify.min.js')}}"></script>
 	<script src="{{asset('backend/plugins/md-editor/lib/raphael.min.js')}}"></script>

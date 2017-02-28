@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="zh-cn" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="zh-cn" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="zh-cn"> <!--<![endif]-->
-<!-- BEGIN HEAD -->
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
     <title>{{$seo['title']}}</title>
@@ -11,16 +11,11 @@
     <meta content="{{$seo['desc']}}" name="description" />
     <meta content="itas" name="author" />
     <meta name="baidu-site-verification" content="hxaiwCrdBK" />
-
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="/front/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="/front/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- END GLOBAL MANDATORY STYLES -->
-
-
     <!-- BEGIN THEME STYLES -->
-
-
     {{--<link href="/front/assets/css/blog.style.css" rel="stylesheet" type="text/css"/>--}}
     <link href="/front/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
     <link href="/front/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
@@ -29,57 +24,16 @@
     <link href="/front/assets/css/style.css" rel="stylesheet" type="text/css"/>
     @yield('css')
     <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href = "bower_components/normalize-css/normalize.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/front/assets/scripts/base.js"></script>
 
 
 </head>
 <body>
-
-
-<!-- BEGIN HEADER -->
-{{--<div class="header navbar navbar-default navbar-static-top">--}}
-
-    {{--<div class="container">--}}
-        {{--<div>--}}
-            {{--<button class="navbar-toggle btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">--}}
-                {{--<span class="icon-bar"></span>--}}
-                {{--<span class="icon-bar"></span>--}}
-                {{--<span class="icon-bar"></span>--}}
-            {{--</button>--}}
-            {{--<a class="navbar-brand logo-v1" href="/">--}}
-                {{--<img src="/front/assets/img/logo.png" id="logoimg" alt="" >--}}
-            {{--</a>--}}
-        {{--</div>--}}
-        {{--<div class="h_menu">--}}
-            {{--<ul>--}}
-                {{--<li class="active">--}}
-                    {{--<a href="/">首页</a>--}}
-                {{--</li>--}}
-                {{--<li class="active">--}}
-                    {{--<a href="/blog">博客</a>--}}
-                {{--</li>--}}
-                {{--<li class="active">--}}
-                    {{--<a href="/blog">视频</a>--}}
-                {{--</li>--}}
-                {{--<li class="active">--}}
-                    {{--<a href="/blog">留言板</a>--}}
-                {{--</li>--}}
-                {{--<li class="active">--}}
-                    {{--<a href="/blog">关于我们</a>--}}
-                {{--</li>--}}
-            {{--</ul>--}}
-        {{--</div>--}}
-        {{--<form method="get" action="/search" class="navbar-form visible-lg-inline-block">--}}
-            {{--<div class="input-group">--}}
-                {{--<input type="text" placeholder="全站搜索" name="q" class="form-control">--}}
-                {{--<span class="input-group-btn">--}}
-                    {{--<button class="btn btn-default" type="submit">--}}
-                        {{--<span class="fa fa-search"></span>--}}
-                    {{--</button>--}}
-                {{--</span>--}}
-            {{--</div>--}}
-        {{--</form>--}}
-    {{--</div>--}}
-{{--</div>--}}
 <nav class="navbar navbar-default lnmp-header" style="background-color: black;" role="navigation">
     <div class="container-fluid container">
         {{--<div style="width:300px;float:right;height:40px;margin-top:12px">--}}
@@ -108,11 +62,11 @@
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active-bar"><a href="/">首页</a></li>
-                <li class=""><a href="/blog">博客</a></li>
+                <li class="active-bar"><a href="#!/view3">首页</a></li>
+                <li class=""><a href="#!/blog">博客</a></li>
                 <li class=""><a href="/video">视频</a></li>
             <li class=""><a href="/message">留言板</a></li>
-                <li class=""><a href="/about">关于我们</a></li>
+                <li class=""><a href="#!/about">关于我们</a></li>
             </ul>
         </div>
 
@@ -132,7 +86,10 @@
 </nav>
 
 @yield('content')
+<script type="text/ng-template" id="web_info.tpl">
+1111
 
+</script>
 <!-- BEGIN COPYRIGHT -->
 <div class="copyright">
     <p>
