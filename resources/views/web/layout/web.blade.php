@@ -62,11 +62,11 @@
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active-bar"><a href="#!/view3">首页</a></li>
-                <li class=""><a href="#!/blog">博客</a></li>
+                <li class="active-bar"><a href="/">首页</a></li>
+                <li class=""><a href="/blog">博客</a></li>
                 <li class=""><a href="/video">视频</a></li>
             <li class=""><a href="/message">留言板</a></li>
-                <li class=""><a href="#!/about">关于我们</a></li>
+                <li class=""><a href="/about">关于我们</a></li>
             </ul>
         </div>
 
@@ -86,10 +86,7 @@
 </nav>
 
 @yield('content')
-<script type="text/ng-template" id="web_info.tpl">
-1111
 
-</script>
 <!-- BEGIN COPYRIGHT -->
 <div class="copyright">
     <p>
