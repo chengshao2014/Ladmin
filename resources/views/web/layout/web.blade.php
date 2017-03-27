@@ -90,7 +90,12 @@
 <!-- BEGIN COPYRIGHT -->
 <div class="copyright">
     <p>
-        Copyright © 2016 lnmp68博客 Design by AChan 京ICP备14049449号-1
+        Copyright © 2016 lnmp68博客 Design by AChan 京ICP备14049449号-1 
+        <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1261585271'%3E%3C/span%3E%3Cscript src='" 
+    + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261585271%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+        </script>
     </p>
 </div>
 <!-- END COPYRIGHT -->
@@ -109,6 +114,7 @@
 <!-- END CORE PLUGINS -->
 
 @yield('js')
+
 </body>
 
 </html>

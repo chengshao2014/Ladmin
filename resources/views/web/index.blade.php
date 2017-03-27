@@ -12,7 +12,7 @@
         <div class="banner_content">
 
             <h1 class="banner_title">
-                <span>LnmpBlog后台管理系统</span>
+                <span>LnmpBlog</span>
             </h1>
             <div id="banner-start">
                 <span id="banner-start-command">https://github.com/chengshao2014/Ladmin</span>
