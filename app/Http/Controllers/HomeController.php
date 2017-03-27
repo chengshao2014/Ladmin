@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function index()
     {
         $seo = [
-            'title'    => 'LnmpBlog Laravel 后台管理系统',
+            'title'    => 'LnmpBlog首页',
             'desc'     => 'Lmyadmin是一个免费开源的后台管理系统，使用html5响应式设计，兼容多客户端友好使用.',
             'keywords' => 'LnmpBlog,Laravel,后台管理系统,开源Laravel后台管理系统',
         ];
